@@ -1,0 +1,12 @@
+#fibonacci
+def fibonacci(a,b,n):
+    series=[a,b]
+    for i in range(0,n-2):
+        series.append(series[i]+series[i+1])
+    for i in range(len(series)):
+        print(series[i], end=" ")
+
+
+print("enter how many terms you want in the fibonacci series")
+n=int(input())
+fibonacci(1,1,n)
